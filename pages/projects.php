@@ -78,7 +78,6 @@
       </div>
     </nav>
     <main>
-?>  
 
 
       <h1>My index</h1>
