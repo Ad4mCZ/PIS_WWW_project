@@ -1,0 +1,4 @@
+/              /index.html     200
+/contact/*      /pages/contact.html   200
+/projects/*      /pages/projects.php   200
+/*      /pages/error.html   400

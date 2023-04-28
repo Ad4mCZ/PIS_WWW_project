@@ -1,0 +1,111 @@
+.project-table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .project {
+    width: 800px;
+    max-width: 100%;
+    height: $projectHeight;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    background-color: white;
+    transition: all 0.35s ease-in-out;
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      position: relative;
+      justify-content: space-between;
+      .left {
+        width: 62.5%;
+        h2 {
+          margin-bottom: 10px;
+          font-size: 24px;
+          text-align: left;
+        }
+        p {
+          font-size: 16px;
+          text-align: left;
+          padding-bottom: 5px;
+        }
+      }
+      .right {
+        width: 37.5%;
+        .helper {
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle;
+        }
+        img {
+          border-radius: 10px;
+          box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+          vertical-align: middle;
+          max-width: 95%;
+          max-height: 95%;
+        }
+        .read-more-button {
+          background-color: $blue;
+          color: white;
+          padding: 5px 10px;
+          position: absolute;
+          left: 0;
+          bottom: 35px;
+          transition: 0.25s all ease-in-out;
+          border: none;
+          outline: none;
+          font-size: 18px;
+          cursor: pointer;
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+          }
+        }
+        .repository{
+          background-color: $emerald;
+          color: white;
+          padding: 5px 10px;
+          transition: 0.25s all ease-in-out;
+          border: none;
+          outline: none;
+          font-size: 18px;
+          position: absolute;
+          left: 170px;
+          bottom: 35px;
+          display: inline-block;
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+          }
+        }
+        .tags {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }    
+    .read-more-only{
+      display: none;
+    }
+    &.read-more{
+      width: 90%;
+      height: $projectHeight * 2;
+      left: 0;
+      z-index: 10;
+      margin-left: 0;
+      margin-right: 0;
+      box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.2);
+      .read-more-only{
+        display: block;
+      }
+    }
+  }
+}

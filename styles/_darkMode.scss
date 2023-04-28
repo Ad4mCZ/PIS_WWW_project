@@ -1,0 +1,52 @@
+body {
+  &.darkMode {
+    background-color: $darkBlack;
+    color: $darkModeText;
+    a {
+      color: white;
+    }
+    nav {
+      ul {
+        li {
+          text-decoration-color: white;
+        }
+        &.scrolled-ul {
+          background-color: $navDarkBlack;
+        }
+      }
+    }
+    main {
+      color: $darkModeText;
+      h1,
+      h2,
+      h3 {
+        color: white;
+      }
+      .project {
+        background-color: $darkBlackSecondary;
+      }
+      #message-form {
+        background-color: $darkBlackSecondary;
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          background-color: $darkBlackTertiary;
+          border: $darkBlack;
+        }
+      }
+
+      .wiki-section {
+        background-color: $darkBlackSecondary;
+      }
+    }
+    footer {
+      .link {
+        a {
+          svg {
+            fill: $lightGray;
+          }
+        }
+      }
+    }
+  }
+}
